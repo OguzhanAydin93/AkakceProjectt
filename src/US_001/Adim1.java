@@ -5,6 +5,8 @@ public class Adim1 {
 
         System.out.println("asdasdas");
 
+        System.out.println("merhaba dünya");
+
 
 
     }

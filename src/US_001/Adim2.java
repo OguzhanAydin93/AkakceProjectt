@@ -6,5 +6,7 @@ public class Adim2 {
         System.out.println("Merhaba java dünyası");
 
         System.out.println("Üzümler bitti mi");
+
+        System.out.println("Yapıyorum ");
     }
 }

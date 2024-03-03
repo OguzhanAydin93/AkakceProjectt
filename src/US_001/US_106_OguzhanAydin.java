@@ -18,11 +18,9 @@ public class US_106_OguzhanAydin extends BaseDriver {
 
         driver.get("https://www.akakce.com/");
 
-        List<WebElement> consent = driver.findElements(By.xpath("//button[@id='L2AGLb']/div"));
-        if (consent.size() > 0)
-            consent.get(0).click();
-
-
+//        List<WebElement> cookies = driver.findElements(By.xpath("//button[@id='L2AGLb']/div"));
+//        if (cookies.size() > 0)
+//            cookies.get(0).click();
 
         Actions aksiyonlar=new Actions(driver);
 
@@ -40,9 +38,15 @@ public class US_106_OguzhanAydin extends BaseDriver {
 
         WebElement hamburgerMenu=driver.findElement(By.cssSelector("[id='H_a_v8']"));
         Action hover=aksiyonlar.moveToElement(hamburgerMenu).build();
+        hover.perform();
 
-        WebElement hesaplarim=driver.findElement(By.cssSelector("[id='HM_p_v8'] +li+li+li+li > a"));
+        WebElement hesaplarim=driver.findElement(By.cssSelector("[id='HM_p_v8']+li+li+li+li>a"));
         hesaplarim.click();
+
+        WebElement mesajlar=driver.findElement(By.cssSelector("[href='/akakcem/mesajlarim/']"));
+        mesajlar.click();
+
+
 
         BekleVeKapat();
 

@@ -7,3 +7,5 @@ public class Adim3 {
         System.out.println("merhaba selenium");
     }
 }
+
+

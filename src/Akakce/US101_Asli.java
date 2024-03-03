@@ -28,8 +28,6 @@ public class US101_Asli extends BaseDriver {
             WebElement name=driver.findElement(By.cssSelector("[id='rnufn'][name='rnufn']"));
             name.sendKeys("Aslı");
 
-
-
             WebElement soyad=driver.findElement(By.cssSelector("[name='rnufs'][id='rnufs']"));
             soyad.sendKeys("Çelık");
 

@@ -1,4 +1,4 @@
-package US_001;
+package Akakce;
 
 public class adim10 {
     public static void main(String[] args) {

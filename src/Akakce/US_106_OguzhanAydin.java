@@ -1,4 +1,4 @@
-package US_001;
+package Akakce;
 
 
 import Utlity.BaseDriver;
@@ -8,10 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.util.List;
 
 
 public class US_106_OguzhanAydin extends BaseDriver {

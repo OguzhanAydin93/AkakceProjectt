@@ -1,14 +1,14 @@
 package Akakce;
 
 import Utlity.BaseDriver;
-import Utlity.MyFunc;
+
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+
 
 public class US101_Asli extends BaseDriver {
 
@@ -74,12 +74,12 @@ public class US101_Asli extends BaseDriver {
 
             WebElement kabulSozlesme=driver.findElement(By.cssSelector("[id='rnufpca']"));
             kabulSozlesme.click();
-            Assert.assertTrue(kabulSozlesme.isSelected(),"Kabul Sözleşmesine Tıklanmadı");
+            Assert.assertTrue("Kabul Sözleşmesine Tıklanmadı", kabulSozlesme.isSelected());
 
 
             WebElement kampanyaSozleme=driver.findElement(By.cssSelector("[id='rnufnee']"));
             kampanyaSozleme.click();
-            Assert.assertTrue(kampanyaSozleme.isSelected(),"Kampanya Sözleşmesine Tıklanmadı");
+            Assert.assertTrue("Kampanya Sözleşmesine Tıklanmadı", kampanyaSozleme.isSelected());
 
 
 

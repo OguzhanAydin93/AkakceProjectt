@@ -1,7 +1,14 @@
 package Akakce;
 
+import com.google.common.annotations.VisibleForTesting;
+import org.junit.Test;
+
+
 public class US102_Hatun {
-    public static void main(String[] args) {
-        System.out.println("Merhaba dünya");
+    @Test
+            public void test(){
+
     }
-}
+
+
+    }

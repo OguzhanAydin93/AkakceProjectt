@@ -32,6 +32,10 @@ public class US103_Nuri extends BaseDriver{
         WebElement cikisYap = driver.findElement(By.cssSelector("[href='#Çık']"));
         cikisYap.click();
 
+        WebElement tekrargirisButonu = driver.findElement(By.xpath("//div[@class='g-3_v8 hm_hp_v8']/div[1]/a[.='Giriş Yap']"));
+        tekrargirisButonu.click();
+        bekle.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/giris/"));
+
         BekleVeKapat();
 
     }

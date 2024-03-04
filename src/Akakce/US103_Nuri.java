@@ -23,7 +23,6 @@ public class US103_Nuri extends BaseDriver{
         WebElement sifre = driver.findElement(By.cssSelector("[id='lifp']"));
         sifre.sendKeys("Testtitans_01");
 
-
         WebElement girisyap = driver.findElement(By.cssSelector("[id='lfb']"));
         girisyap.click();
 
@@ -35,16 +34,5 @@ public class US103_Nuri extends BaseDriver{
 
         BekleVeKapat();
 
-
-
-
-
-
-
     }
-
-
-
-
-
 }

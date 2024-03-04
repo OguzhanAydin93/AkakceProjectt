@@ -5,33 +5,30 @@ import Utlity.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class US103_Nuri extends BaseDriver{
     @Test
     public void Test1()
     {
         driver.get("https://www.akakce.com/");
-        MyFunc.Bekle(1);
 
         WebElement girisButonu = driver.findElement(By.xpath("//div[@class='g-3_v8 hm_hp_v8']/div[1]/a[.='Giriş Yap']"));
         girisButonu.click();
-        MyFunc.Bekle(1);
+        bekle.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/giris/"));
 
-        WebElement email = driver.findElement(By.id("life"));
+        WebElement email = driver.findElement(By.cssSelector("[id='life']"));
         email.sendKeys("aslicelikz@outlook.com");
-        MyFunc.Bekle(1);
 
-        WebElement sifre = driver.findElement(By.id("lifp"));
+        WebElement sifre = driver.findElement(By.cssSelector("[id='lifp']"));
         sifre.sendKeys("Testtitans_01");
-        MyFunc.Bekle(1);
 
-        WebElement girisyap = driver.findElement(By.id("lfb"));
+
+        WebElement girisyap = driver.findElement(By.cssSelector("[id='lfb']"));
         girisyap.click();
-        MyFunc.Bekle(2);
 
-        WebElement hesabim = driver.findElement(By.id("H_a_v8"));
+        WebElement hesabim = driver.findElement(By.cssSelector("[title='Hesabım']"));
         hesabim.click();
-        MyFunc.Bekle(2);
 
         WebElement cikisYap = driver.findElement(By.cssSelector("[href='#Çık']"));
         cikisYap.click();

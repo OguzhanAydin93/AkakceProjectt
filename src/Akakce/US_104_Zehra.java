@@ -33,8 +33,8 @@ public class US_104_Zehra extends BaseDriver {
         driverAksiyon.moveToElement(myAccount).build().perform();
 
         WebElement myAccountVerify=driver.findElement(By.xpath("//a[text()='Hesabım']"));
-        Select accountMenu=new Select(myAccountVerify);
-        accountMenu.selectByVisibleText("Hesabım");
+        myAccountVerify.click();
+        bekle.until(ExpectedConditions.urlContains("https://www.akakce.com/akakcem/"));
 
 
 

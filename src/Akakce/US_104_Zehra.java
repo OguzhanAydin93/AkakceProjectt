@@ -21,6 +21,13 @@ public class US_104_Zehra extends BaseDriver {
         WebElement password = driver.findElement(By.xpath("//input[@name='lifp']"));
         password.sendKeys("Q1q2q3q4.");
 
+        WebElement giris=driver.findElement(By.xpath("(//input[@value='Giriş yap'])[1]"));
+        giris.click();
+
+
+
+
+
 
     }
 

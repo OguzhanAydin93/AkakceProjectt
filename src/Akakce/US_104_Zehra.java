@@ -23,6 +23,10 @@ public class US_104_Zehra extends BaseDriver {
 
         WebElement giris=driver.findElement(By.xpath("(//input[@value='Giriş yap'])[1]"));
         giris.click();
+        bekle.until(ExpectedConditions.urlContains("https://www.akakce.com/"));
+
+        WebElement myAccount= driver.findElement(By.xpath("//a[@id='H_a_v8']"));
+        myAccount.click();
 
 
 

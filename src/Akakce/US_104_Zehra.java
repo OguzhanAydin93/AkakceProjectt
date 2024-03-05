@@ -3,9 +3,11 @@ package Akakce;
 import Utlity.BaseDriver;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class US_104_Zehra extends BaseDriver {
     @Test
@@ -29,6 +31,12 @@ public class US_104_Zehra extends BaseDriver {
 
         WebElement myAccount= driver.findElement(By.xpath("//a[@id='H_a_v8']"));
         driverAksiyon.moveToElement(myAccount).build().perform();
+
+        WebElement myAccountVerify=driver.findElement(By.xpath("//a[text()='Hesabım']"));
+        Select accountMenu=new Select(myAccountVerify);
+        accountMenu.selectByVisibleText("Hesabım");
+
+
 
 
         BekleVeKapat();

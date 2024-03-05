@@ -31,6 +31,9 @@ public class US_104_Zehra extends BaseDriver {
         driverAksiyon.moveToElement(myAccount).build().perform();
 
 
+        BekleVeKapat();
+
+
 
 
 

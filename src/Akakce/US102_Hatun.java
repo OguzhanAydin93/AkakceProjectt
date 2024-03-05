@@ -18,6 +18,9 @@ public class US102_Hatun extends BaseDriver {
         WebElement girisYap= driver.findElement(By.xpath("(//a[@href='/akakcem/giris/'])"));
         girisYap.click();
 
+        WebElement eposta=driver.findElement(By.cssSelector("[id='life'][name='life']"));
+        eposta.sendKeys("hatunyuksel.106@gmail.com");
+
 
     }
 

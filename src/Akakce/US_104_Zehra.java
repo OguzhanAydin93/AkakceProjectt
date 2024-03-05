@@ -4,12 +4,14 @@ import Utlity.BaseDriver;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class US_104_Zehra extends BaseDriver {
     @Test
     public void Login() {
         driver.get("https://www.akakce.com/");
+        Actions driverAksiyon=new Actions(driver);
 
         WebElement login = driver.findElement(By.xpath("(//a[text()='Giriş Yap'])[1]"));
         login.click();
@@ -26,7 +28,12 @@ public class US_104_Zehra extends BaseDriver {
         bekle.until(ExpectedConditions.urlContains("https://www.akakce.com/"));
 
         WebElement myAccount= driver.findElement(By.xpath("//a[@id='H_a_v8']"));
-        myAccount.click();
+        driverAksiyon.moveToElement(myAccount).build().perform();
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@ import com.google.common.annotations.VisibleForTesting;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class US102_Hatun extends BaseDriver {
@@ -20,6 +21,15 @@ public class US102_Hatun extends BaseDriver {
 
         WebElement eposta=driver.findElement(By.cssSelector("[id='life'][name='life']"));
         eposta.sendKeys("hatunyuksel.106@gmail.com");
+
+        WebElement sifre= driver.findElement(By.cssSelector("[id='lifp'][name='lifp']"));
+        sifre.sendKeys("Çaykuruüzüm1");
+
+        WebElement girisbtn= driver.findElement(By.cssSelector("[id='lfb']"));
+        girisbtn.click();
+
+
+
 
 
     }

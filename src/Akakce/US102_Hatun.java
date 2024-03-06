@@ -14,7 +14,6 @@ public class US102_Hatun extends BaseDriver {
             public void test(){
 
         driver.get("https://www.akakce.com/");
-        MyFunc.Bekle(2);
 
         WebElement girisYap= driver.findElement(By.xpath("(//a[@href='/akakcem/giris/'])"));
         girisYap.click();

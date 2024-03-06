@@ -27,6 +27,9 @@ public class US102_Hatun extends BaseDriver {
         WebElement girisbtn= driver.findElement(By.cssSelector("[id='lfb']"));
         girisbtn.click();
 
+        BekleVeKapat();
+
+
 
 
 

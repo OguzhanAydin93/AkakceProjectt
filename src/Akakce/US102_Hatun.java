@@ -3,6 +3,7 @@ package Akakce;
 import Utlity.BaseDriver;
 import Utlity.MyFunc;
 import com.google.common.annotations.VisibleForTesting;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -27,8 +28,11 @@ public class US102_Hatun extends BaseDriver {
         WebElement girisbtn= driver.findElement(By.cssSelector("[id='lfb']"));
         girisbtn.click();
 
-        BekleVeKapat();
+        WebElement hatun= driver.findElement(By.linkText("Hatun"));
+        Assert.assertTrue("Hesap doğrulandı",hatun.getText().equals("Hatun"));
 
+
+        BekleVeKapat();
 
 
 

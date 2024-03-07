@@ -29,7 +29,7 @@ public class US102_Hatun extends BaseDriver {
         girisbtn.click();
 
         WebElement hatun= driver.findElement(By.linkText("Hatun"));
-        Assert.assertTrue("Hesap doğrulandı",hatun.getText().equals("Hatun"));
+        Assert.assertTrue("Mesaj doğru değil",hatun.getText().equals("Hatun"));
 
 
         BekleVeKapat();

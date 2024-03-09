@@ -15,10 +15,6 @@ public class US_105_UlviSuleyman {
     public void Test1() {
         driver.get("https://www.akakce.com/");
 
-//        List<WebElement> cookies = driver.findElements(By.xpath("//button[@id='L2AGLb']/div"));
-//        if (cookies.size() > 0)
-//            cookies.get(0).click();
-
         Actions driverAction = new Actions(driver);
 
         bekle.until(ExpectedConditions.urlToBe("https://www.akakce.com/"));
